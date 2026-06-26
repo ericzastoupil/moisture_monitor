@@ -35,8 +35,16 @@ make
 - [x] Build Memory Pool logic
 - [x] Build Ring Buffer logic
 - [x] Build Scheduler logic
-- [ ] Build Hardware Abstraction Layer (HAL) logic
-- [ ] Build ADC
+- [ ] Build Hardware Abstraction Layer (HAL)
+- [ ] Build Analog to Digital Converter ADC (ADC)
 - [ ] Build Moisture Sensor Driver
 - [ ] Build MQTT Connection
 - [ ] Build MQTT Publisher
+- [ ] Implement deep sleep between readings
+- [ ] Estimate and document battery life
+- [ ] Optimize WiFi reconnect using RTC memory and static IP
+- [ ] Set up ESP-IDF toolchain
+- [ ] Port platform layer to ESP-IDF project
+- [ ] Swap simulated HAL for real ESP-IDF hardware calls
+- [ ] Flash and test on real hardware
+- [ ] Calibrate moisture sensor (map raw ADC values to 0-100%)
