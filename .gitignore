@@ -1,0 +1,6 @@
+app/app
+tests/test_mem_pool
+tests/test_ring_buffer
+tests/test_scheduler
+tests/test_hal
+tests/test_sensor
