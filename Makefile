@@ -5,6 +5,16 @@ IFLAGS = -I platform -I hal
 
 all: tests/test_mem_pool tests/test_ring_buffer tests/test_scheduler tests/test_hal tests/test_sensor app/app
 
+test: tests/test_mem_pool tests/test_ring_buffer tests/test_scheduler tests/test_hal tests/test_sensor
+	./tests/test_mem_pool 
+	./tests/test_ring_buffer 
+	./tests/test_scheduler
+	./tests/test_hal 
+	./tests/test_sensor
+
+run: app/app
+	./app/app
+
 tests/test_mem_pool: tests/test_mem_pool.c platform/mem_pool.c platform/mem_pool.h
 	$(CC) $(CFLAGS) $< platform/mem_pool.c $(IFLAGS) -o $@
 
