@@ -6,8 +6,13 @@ It will record moisture level readings and report them back to HomeAssistant ove
 Automations can be written against the moisture levels in HomeAssistant to tell the Z's when they need to water.
 
 ## Hardware
-- ESP32 DevKitC
+- ESP32 DevKitC (ESP32-WROOM-32, 38 pin)
 - Capacitive soil moisture sensor v1.2
+- TP4056 LiPo charger protection module
+- 3.7V 2000mAh LiPo battery with JST connector
+- IP65 waterproof junction box
+- Jumper wires (female-to-female)
+- Micro USB cable (data, not charge only)
 
 ## Structure
 - moisture_monitor
