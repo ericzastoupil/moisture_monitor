@@ -9,7 +9,7 @@ int main(){
     
     //Testing task_init works as expected
     Task task;
-    task_init(&task, dummy_task, 1);
+    task_init(&task, dummy_task, 1, 0);
     assert(task.fn == dummy_task);
     assert(task.period == 1);
     assert(task.next_run == 1);

@@ -1,10 +1,10 @@
 #include "scheduler.h"
 
 //Initializes a task- taking a function pointer and period for execution
-void task_init(Task *task, void (*fn)(void), uint32_t period){
+void task_init(Task *task, void (*fn)(void), uint32_t period, uint32_t now){
     task->fn = fn;
     task->period = period;
-    task->next_run = period;
+    task->next_run = now + period;
 }
 
 //Loops through all the tasks provided and checks to see if they need to be run
